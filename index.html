@@ -276,12 +276,12 @@
       [72,73],[74,75,76],[77,78],[79,80],[81,82],
       [83],[84,85],[86,87],[88,89],[90,91],
       [92,93,94],[95],[96,97],[98,99],[100,101],
-      [102,103],[104,105],[106],[107],[108],
+      [102,103],[104,105],[106,107],[108],
       [109,110],[111,112],[113],[114],[115],
       [116,117],[118,119],[120,121],[122],[123],
       [124],[125],[126],[127],[128],
       [129,130],[131],[132],[133,134,135,136],[137],
-      [138,139],[140,141],[142],[143],[144],[145],[146],
+      [138,139,140,141],[142],[143],[144],[145],[146],
       [147,148,149],[150],[151]
     ];
 
@@ -669,7 +669,7 @@
               </div>
 
               {/* Grid */}
-              <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 gap-1.5 sm:gap-2 max-h-[400px] overflow-y-auto p-1">
+              <div className="grid grid-cols-5 sm:grid-cols-8 md:grid-cols-10 lg:grid-cols-12 gap-1.5 sm:gap-2 p-1">
                 {filteredPokemon.map(poke => (
                   <PoolItem
                     key={poke.id}
@@ -689,8 +689,9 @@
             </section>
 
             {/* Footer */}
-            <footer className="text-center text-[7px] text-gray-600 pb-4">
-              POKéMON PARTY RANDOMIZER — GEN I — 151 ORIGINAL POKéMON
+            <footer className="text-center text-[7px] text-gray-600 pb-4 space-y-1">
+              <div>POKéMON PARTY RANDOMIZER — GEN I — 151 ORIGINAL POKéMON</div>
+              <div>v5</div>
             </footer>
           </main>
 
